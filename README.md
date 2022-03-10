@@ -1,6 +1,7 @@
 # Misty plugin for Thonny editor
 
-based on MrPython https://github.com/nohtyprm/MrPython
+based on Misty https://github.com/mashination/misty itself based on MrPython https://github.com/nohtyprm/MrPython
+
 
 # Installation
 
