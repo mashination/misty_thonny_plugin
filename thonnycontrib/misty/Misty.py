@@ -3,6 +3,7 @@ import os
 import sys
 from PyInterpreter import PyInterpreter
 from translate import tr
+import platform
 
 
 class Misty:
@@ -27,7 +28,8 @@ class Misty:
 
 
     def write(self, s, tags=()):
-        os.system('color')
+        if platform.system() == "Windows": 
+            os.system('color')
         
         if len(tags)>0 and tags in self.TEXT_COLORS_BY_MODE: 
             print(self.TEXT_COLORS_BY_MODE[tags] + s + '\033[0m')
